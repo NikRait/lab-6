@@ -2,6 +2,7 @@ numbers = [1,2,3,3,4,5,1,6,7,6,7,6,7,67,8,9,9]
 
 # Через словарь с подсчетом
 from collections import Counter
+
 counts = Counter(numbers)
 duplicates = [num for num, count in counts.items() if count > 1]
 
