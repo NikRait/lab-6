@@ -1,4 +1,4 @@
-numbers = [1,2,3,3,4,5,1,6,7,6,7,6,7,67,8,9,9]
+numbers = [1,2,3,3,4,5,1,6,7,6,7,6,7,67,8,9,9] # изначальный список
 
 # Через словарь с подсчетом
 from collections import Counter
@@ -9,8 +9,8 @@ duplicates = [num for num, count in counts.items() if count > 1]
 print(f"Duplicates: {duplicates}")
 
 # Через множества
-seen = set()
-duplicates_2 = set()
+seen = set() # Множество чисел, которые уже просмотрел
+duplicates_2 = set() # Множество дупликатов
 for num in numbers:
     if num in seen:
         duplicates_2.add(num)

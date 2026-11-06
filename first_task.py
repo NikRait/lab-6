@@ -1,15 +1,15 @@
-import random
+import random # импортирую библиотеку
 
-n = int(input("Enter N: "))
-numbers = [random.randint(1, 100) for _ in range(n)]
+n = int(input("Enter N: ")) # получаю значение от пользователя
+numbers = [random.randint(1, 100) for _ in range(n)] # заполняю список случайными значениями
 
-print(f"Original list: {numbers}")
-print(f"Sum: {sum(numbers)}")
-print(f"Average: {sum(numbers) / len(numbers):.2f}")
-print(f"Minimum: {min(numbers)}")
-print(f"Maximum: {max(numbers)}")
+print(f"Original list: {numbers}") # изначальный список
+print(f"Sum: {sum(numbers)}") # сумма всех элементов
+print(f"Average: {sum(numbers) / len(numbers):.2f}") # среднее значение всех элементов списка
+print(f"Minimum: {min(numbers)}") # минимум
+print(f"Maximum: {max(numbers)}") # максимум
 
-numbers.sort()
+numbers.sort() # сортирую список
 print(f"Sorted: {numbers}")
 
 unique = list(dict.fromkeys(numbers))
